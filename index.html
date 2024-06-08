@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenAI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+<header>
+    <img src="img/logo1.png" class="logo">
+    <nav>
+        <img src="https://hackathon.feexp.space/assets/images/logo/hackathon_logo%20web.png"><!-- comment -->
+    </nav>
+</header>
+<body>
+    <div class="image-comparison">
+        <div class="images-containers">
+            <img class="before-image" src="img/anh3.jpg" alt="Before Image" />
+            <img class="after-image" src="img/anh4.jpg" alt="After Image" />
+            <div class="slider-line"></div>
+            <div class="right-image-container">
+                <img src="img/back3.jpg" alt="Right Image">
+                <p>AI change HAIRSTYLE<br>in on CLICK </p>
+  <p1>Gen Hair provides solutions to improve your hair and scalp problems <br>and helps you choose the perfect hairstyle instantly</p1>
+
+            </div>
+            <input type="range" class="slider" min="0" max="50" value="16.67" />
+           
+            <div class="upload-container">
+                <input type="file" id="file-input" class="file-input" multiple hidden>
+                <label for="file-input" class="file-label">
+                    <div class="upload-button">
+                    Choose files
+                    </div>
+                    <p>or drop it here</p>
+                </label>
+                <p class="terms">
+                    By continuing, you accept our <a href="#">Terms of Service</a> and acknowledge receipt of our <a href="#">Privacy & Cookie Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bodys"> 
+        <div class="chat-icon" onclick="toggleChatBox()">💬</div>
+        <div class="chat-box" id="chat-box">
+            <div class="chat-header">Chat Box</div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message received">Chào bạn! Bạn cần tôi hỗ trợ gì về vấn đề chăm sóc tóc?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/home.js">
+       
+    </script>
+</body>
+</html>

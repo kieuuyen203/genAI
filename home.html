@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GenAI</title>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/change.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <a href="index.html">  <img src="img/logo1.png" class="logo" ></a>
+    <nav>
+        <img src="https://hackathon.feexp.space/assets/images/logo/hackathon_logo%20web.png"><!-- comment -->
+    </nav>
+</header>
+
+<div class="product">
+    <div class="image-comparison">
+        <div class="images-containers">
+            <img class="before-image"
+                 src="img/anh1.png"
+                 alt="Before Image"/>
+            <div class="label before">Before</div>
+            <img class="after-image"
+                 src="img/anh1.png"
+                 alt="After Image" id="imgBox"/>
+            <div class="label after">After</div>
+            <div class="slider-line"></div>
+            <input type="range" class="slider" min="0" max="100"/>
+        </div>
+    </div>
+    <div class="product-img">
+        <img src="img/anh12.jpg" onclick="myFunction(this)">
+        <img src="img/anh2.png" onclick="myFunction(this)">
+        <img src="img/anh11.jpg" onclick="myFunction(this)">
+        <img src="img/anh5.jpg" onclick="myFunction(this)">
+        <input type="hidden" src="img/anh5.jpg" onclick="myFunction(this)"> 
+    </div>
+</div>
+
+<div class="bodys"> 
+    <div class="chat-icon" onclick="toggleChatBox()">💬</div>
+
+    <div class="chat-box" id="chat-box">
+        <div class="chat-header">Chat Box</div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message received">Chào bạn! Bạn cần tôi hỗ trợ gì về vấn đề chăm sóc tóc?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/change.js"></script>
+</body>
+</html>
