@@ -27,7 +27,7 @@
                  alt="Before Image"/>
             <div class="label before">Before</div>
             <img class="after-image"
-                 src="img/anh1.png"
+                 src="img/anh2.png"
                  alt="After Image" id="imgBox"/>
             <div class="label after">After</div>
             <div class="slider-line"></div>
@@ -35,8 +35,8 @@
         </div>
     </div>
     <div class="product-img">
-        <img src="img/anh12.jpg" onclick="myFunction(this)">
         <img src="img/anh2.png" onclick="myFunction(this)">
+        <img src="img/anh12.jpg" onclick="myFunction(this)">
         <img src="img/anh11.jpg" onclick="myFunction(this)">
         <img src="img/anh5.jpg" onclick="myFunction(this)">
         <input type="hidden" src="img/anh5.jpg" onclick="myFunction(this)"> 
@@ -45,11 +45,13 @@
 
 <div class="bodys"> 
     <div class="chat-icon" onclick="toggleChatBox()">💬</div>
-
     <div class="chat-box" id="chat-box">
         <div class="chat-header">Chat Box</div>
         <div class="chat-messages" id="chat-messages">
-            <div class="message received">Chào bạn! Bạn cần tôi hỗ trợ gì về vấn đề chăm sóc tóc?</div>
+            <div class="message-container received">
+                <img src="img/logo2.jpg" alt="Logo" class="logo1">
+                <div class="message">Hello! How can I help you today?</div>
+            </div>
         </div>
         <div class="chat-input">
             <input type="text" id="message-input" placeholder="Type your message...">
